@@ -1,6 +1,16 @@
 ### CriteriaJS
 Just some shit that only +200IQ can understand.
 
+#### Package Managers
+
+```sh
+# Bower
+bower install --save criteriajs
+
+# NPM
+npm install criteriajs
+```
+
 ```javascript
   const criteria = $('input[data-criteria]').Criteria({
     rules: {
@@ -20,16 +30,6 @@ Just some shit that only +200IQ can understand.
     focus: ($element, attributes) => {},
     blur: ($element) => {},
   });
-```
-
-#### Package Managers
-
-```sh
-# Bower
-bower install --save criteriajs
-
-# NPM
-npm install criteriajs
 ```
 
 #### Using Data Attribute
