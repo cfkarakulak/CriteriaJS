@@ -1,7 +1,7 @@
 ### CriteriaJS
 Just some shit that only +200IQ can understand.
 
-#### Package Managers
+#### Install Using Package Managers
 
 ```sh
 # Bower
@@ -10,6 +10,10 @@ bower install --save criteriajs
 # NPM
 npm install criteriajs
 ```
+
+#### Register Global Rules
+
+Rules are pretty self-explanatory.
 
 ```javascript
   const criteria = $('input[data-criteria]').Criteria({
