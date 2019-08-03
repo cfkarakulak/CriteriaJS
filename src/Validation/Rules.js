@@ -30,23 +30,23 @@ export default class Rules {
     return isAtLeastAs(length, min);
   }
 
-  static isAlphanumerical(value, occurence) {
-    return isAlphanumerical(value, occurence);
+  static isAlphanumerical(value, occurrence) {
+    return isAlphanumerical(value, occurrence);
   }
 
-  static isNumerical(value, occurence) {
-    return isNumerical(value, occurence);
+  static isNumerical(value, occurrence) {
+    return isNumerical(value, occurrence);
   }
 
-  static isLowerCase(value, occurence) {
-    return isLowerCase(value, occurence);
+  static isLowerCase(value, occurrence) {
+    return isLowerCase(value, occurrence);
   }
 
-  static isUpperCase(value, occurence) {
-    return isUpperCase(value, occurence);
+  static isUpperCase(value, occurrence) {
+    return isUpperCase(value, occurrence);
   }
 
-  static isSpecial(value, occurence) {
-    return isSpecial(value, occurence);
+  static isSpecial(value, occurrence) {
+    return isSpecial(value, occurrence);
   }
 }
