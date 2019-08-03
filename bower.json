@@ -1,0 +1,22 @@
+{
+  "name": "criteriajs",
+  "description": "Password criteria authoritor",
+  "main": "Criteria/Criteria.js",
+  "authors": [
+    "Cemre Fatih Karakulak"
+  ],
+  "license": "WTFPL",
+  "keywords": [
+    "password",
+    "criteria",
+    "validation"
+  ],
+  "homepage": "https://github.com/cfkarakulak/CriteriaJS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
