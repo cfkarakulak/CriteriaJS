@@ -1,6 +1,6 @@
 {
   "name": "criteriajs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Password criteria authoritor",
   "main": "Criteria/Criteria.js",
   "scripts": {
