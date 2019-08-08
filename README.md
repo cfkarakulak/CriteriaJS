@@ -14,7 +14,7 @@ npm install criteriajs
 #### Import Library
 
 ```javascript
-  import 'criteriajs';
+import 'criteriajs';
 ```
 
 #### Register Global Rules
