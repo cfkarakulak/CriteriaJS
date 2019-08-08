@@ -1,4 +1,4 @@
-### CriteriaJS
+### criteriaJS
 Just some shit that only +200IQ can understand.
 
 #### Install Using Package Managers
@@ -16,7 +16,7 @@ npm install criteriajs
 Rules are pretty self-explanatory.
 
 ```javascript
-  const criteria = $('input[data-criteria]').Criteria({
+  const criteria = $('input[data-criteria]').criteria({
     rules: {
       length: [6, 15],
       contains: {

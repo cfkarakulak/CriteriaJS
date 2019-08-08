@@ -32,15 +32,15 @@ window.jQuery = $;
     factory(window.jQuery);
   }
 }(($) => {
-  $.fn.Criteria = function (args) {
+  $.fn.criteria = function (args) {
     if (args instanceof Object === false) {
       return $.error('parameter needs to be some kinda obJ or sth bruv.');
     }
 
     if (Helpers.has(args, 'rules') === true) {
       return this.each((i, el) => {
-        if (!$.data(el, 'Criteria')) {
-          $.data(el, 'Criteria', new Authority(el, args));
+        if (!$.data(el, 'criteria')) {
+          $.data(el, 'criteria', new Authority(el, args));
         }
       });
     }
@@ -88,8 +88,8 @@ window.jQuery = $;
 
         args.rules = holder;
 
-        if (!$.data(el, 'Criteria')) {
-          $.data(el, 'Criteria', new Authority(el, args));
+        if (!$.data(el, 'criteria')) {
+          $.data(el, 'criteria', new Authority(el, args));
         }
 
         return el;
