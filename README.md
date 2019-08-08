@@ -22,24 +22,24 @@ import 'criteriajs';
 Rules are pretty self-explanatory.
 
 ```javascript
-  const criteria = $('input[data-criteria]').criteria({
-    rules: {
-      length: [6, 15],
-      contains: {
-        alphanumerical: 1,
-        numerical: 1,
-        lowercase: 1,
-        uppercase: 1,
-        special: 1,
-      },
+const criteria = $('input[data-criteria]').criteria({
+  rules: {
+    length: [6, 15],
+    contains: {
+      alphanumerical: 1,
+      numerical: 1,
+      lowercase: 1,
+      uppercase: 1,
+      special: 1,
     },
-    initialize: ($element) => {},
-    change: ($element, attributes) => {
-      Object.values(attributes.rules).every(rule => rule === true);
-    },
-    focus: ($element, attributes) => {},
-    blur: ($element) => {},
-  });
+  },
+  initialize: ($element) => {},
+  change: ($element, attributes) => {
+    Object.values(attributes.rules).every(rule => rule === true);
+  },
+  focus: ($element, attributes) => {},
+  blur: ($element) => {},
+});
 ```
 
 #### Using Data Attribute
