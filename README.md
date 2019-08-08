@@ -11,6 +11,12 @@ bower install --save criteriajs
 npm install criteriajs
 ```
 
+#### Import Library
+
+```javascript
+  import 'criteriajs';
+```
+
 #### Register Global Rules
 
 Rules are pretty self-explanatory.
