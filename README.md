@@ -20,7 +20,8 @@ import 'criteriajs';
 #### Register Global Rules
 
 Rules are pretty self-explanatory.
-Length rule has a type of range (min-max) while the rest only checks for single value (min)
+Length rule has a type of range (min-max) while the rest
+only checks for single value (min)
 
 ```javascript
 const criteria = $('input[data-criteria]').criteria({
@@ -46,10 +47,15 @@ const criteria = $('input[data-criteria]').criteria({
 #### Using Data Attribute
 
 If you wish to register criteria per element instead of globally,
-just omit the rules object and add data-criteria attribute and
-seperate each rule with a pipe (|).
+just omit the rules object, add data-criteria attribute to your inputs
+and seperate each rule with a pipe (|).
 
 Example:
+
+```html
+<input type="password" data-criteria="length:6-15|alphanumerical:1|mumerical:1|uppercase:2|lowercase:3">
+<input type="password" data-criteria="length:4-20|mumerical:3|uppercase:1|special:3">
+```
 
 ```javascript
 const criteria = $('input[data-criteria]').criteria({
@@ -62,19 +68,29 @@ const criteria = $('input[data-criteria]').criteria({
 });
 ```
 
-```html
-<input type="password" data-criteria="length:6-15|alphanumerical:1|mumerical:1|uppercase:2|lowercase:3">
-<input type="password" data-criteria="length:4-20|mumerical:3|uppercase:1|special:3">
-```
-
 #### When to Enable / Disable Form Submit
 
-You can disable the form from being submitted beforehand by adding ```disabled```
-attribute to the button, and remove the attribute when all criteria are matched.
-You can determine if all rules are satisfied by
+You should disable the form from being submitted by adding ```disabled```
+attribute to the button beforehand, and remove the attribute when all criteria are matched.
+A simple check can be used to determine whether all of the rules you wish to validate are satisfied or not.
 
 ```javascript
 Object.values(attributes.rules).every(rule => rule === true);
+```
+
+#### Setting up development environment
+
+You can go ahead and play around with ```src/example/index.html``` after running the commands below.
+
+```
+# 1. fetch project
+git clone git@github.com:cfkarakulak/CriteriaJS.git
+
+# 2. change directory to criteriajs and install dependencies
+npm install
+
+# 3. compile and listen for changes
+npm run watch
 ```
 
 #### Settings
