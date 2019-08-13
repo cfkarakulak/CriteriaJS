@@ -43,25 +43,41 @@ const criteria = $('input[data-criteria]').criteria({
 });
 ```
 
-#### When to Enable / Disable Form Submit
-
-You have to disable the form from being submitted beforehand
-
-```javascript
-  Object.values(attributes.rules).every(rule => rule === true);
-```
-
 #### Using Data Attribute
 
-If you wish to register criteria per element instead of globally, just omit the rules object and add data-criteria attribute and seperate each rule with pipe (|).
+If you wish to register criteria per element instead of globally,
+just omit the rules object and add data-criteria attribute and
+seperate each rule with a pipe (|).
 
 Example:
 
-```html
-<input type="password" data-criteria="length:6-15|alphanumerical:1|mumerical:1|uppercase:2|lowercase:3">
+```javascript
+const criteria = $('input[data-criteria]').criteria({
+  initialize: ($element) => {},
+  change: ($element, attributes) => {
+    // console.log($element, attributes);
+  },
+  focus: ($element, attributes) => {},
+  blur: ($element) => {},
+});
 ```
 
-### Settings
+```html
+<input type="password" data-criteria="length:6-15|alphanumerical:1|mumerical:1|uppercase:2|lowercase:3">
+<input type="password" data-criteria="length:4-20|mumerical:3|uppercase:1|special:3">
+```
+
+#### When to Enable / Disable Form Submit
+
+You can disable the form from being submitted beforehand by adding ```disabled```
+attribute to the button, and remove the attribute when all criteria are matched.
+You can determine if all rules are satisfied by
+
+```javascript
+Object.values(attributes.rules).every(rule => rule === true);
+```
+
+#### Settings
 
 Rule | Type | Default | Description
 ------ | ---- | ------- | -----------
