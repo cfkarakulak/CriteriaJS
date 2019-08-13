@@ -6,13 +6,13 @@
 | (__| |  | | ||  __/ |  | | (_| |
  \___|_|  |_|\__\___|_|  |_|\__,_|
 
-  Description: Checks whether the length has at least min chars.
-  Version: 1.0.0
+  Description: Checks whether the value has number of special occurence.
+  Version: 1.0.4
   License: WTFPL
    Author: CFK <cradexco@gmail.com>
      Repo: https://github.com/cfkarakulak/CriteriaJS
 */
 
-export default function isAtLeastAs(length, min) {
-  return length >= min;
+export default function isSpecial(value, occurence) {
+  return RegExp(`(\\D*(!|@|#|%|$|%)){${occurence},}`, 'gi').test(value);
 }

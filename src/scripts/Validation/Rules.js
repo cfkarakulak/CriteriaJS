@@ -7,7 +7,7 @@
  \___|_|  |_|\__\___|_|  |_|\__,_|
 
   Description: Kinda behaves like an interface or doesn't who givsafuq.
-  Version: 1.0.0
+  Version: 1.0.4
   License: WTFPL
    Author: CFK <cradexco@gmail.com>
      Repo: https://github.com/cfkarakulak/CriteriaJS

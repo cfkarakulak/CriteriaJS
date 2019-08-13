@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CriteriaJS</title>
+    <link rel="stylesheet" type="text/css" href="../../dist/bundle.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <form action="/" method="POST">
+        <div class="field">
+          <div class="item">
+            <label>Enter your password</label>
+            <input type="password" name="password" data-criteria="length:6-15|numeric:2|uppercase:1">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="../../dist/bundle.js"></script>
+  </body>
+</html>

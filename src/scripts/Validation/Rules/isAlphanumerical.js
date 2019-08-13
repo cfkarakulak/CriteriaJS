@@ -6,13 +6,13 @@
 | (__| |  | | ||  __/ |  | | (_| |
  \___|_|  |_|\__\___|_|  |_|\__,_|
 
-  Description: Checks whether the value has number of uppercase occurence.
-  Version: 1.0.0
+  Description: Checks whether the value has number of alphanumerical occurence.
+  Version: 1.0.4
   License: WTFPL
    Author: CFK <cradexco@gmail.com>
      Repo: https://github.com/cfkarakulak/CriteriaJS
 */
 
-export default function isUpperCase(value, occurence) {
-  return RegExp(`(.*[A-Z]){${occurence},}.*`, 'g').test(value);
+export default function isAlphanumerical(value, occurence) {
+  return RegExp(`(\\D*\\w){${occurence},}\\D*`, 'gi').test(value);
 }

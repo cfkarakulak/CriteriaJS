@@ -1,5 +1,5 @@
 ### criteriaJS
-Just some shit that only +200IQ can understand.
+Apply pre-defined rules to your password fields.
 
 #### Install Using Package Managers
 
@@ -20,6 +20,7 @@ import 'criteriajs';
 #### Register Global Rules
 
 Rules are pretty self-explanatory.
+Length rule has a type of range (min-max) while the rest only checks for single value (min)
 
 ```javascript
 const criteria = $('input[data-criteria]').criteria({
@@ -40,6 +41,14 @@ const criteria = $('input[data-criteria]').criteria({
   focus: ($element, attributes) => {},
   blur: ($element) => {},
 });
+```
+
+#### When to Enable / Disable Form Submit
+
+You have to disable the form from being submitted beforehand
+
+```javascript
+  Object.values(attributes.rules).every(rule => rule === true);
 ```
 
 #### Using Data Attribute

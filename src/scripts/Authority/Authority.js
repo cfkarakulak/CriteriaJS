@@ -7,7 +7,7 @@
  \___|_|  |_|\__\___|_|  |_|\__,_|
 
   Description: Bootstrap for event listeners and what not.
-  Version: 1.0.0
+  Version: 1.0.4
   License: WTFPL
    Author: CFK <cradexco@gmail.com>
      Repo: https://github.com/cfkarakulak/CriteriaJS

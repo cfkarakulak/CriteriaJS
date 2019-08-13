@@ -7,7 +7,7 @@
  \___|_|  |_|\__\___|_|  |_|\__,_|
 
   Description: Initiates this worthless plugin.
-  Version: 1.0.0
+  Version: 1.0.4
   License: WTFPL
    Author: CFK <cradexco@gmail.com>
      Repo: https://github.com/cfkarakulak/CriteriaJS
@@ -34,13 +34,13 @@ window.jQuery = $;
 }(($) => {
   $.fn.criteria = function (args) {
     if (args instanceof Object === false) {
-      return $.error('parameter needs to be some kinda obJ or sth bruv.');
+      return $.error('argument type mismatch: expected an object.');
     }
 
     if (Helpers.has(args, 'rules') === true) {
       return this.each((i, el) => {
-        if (!$.data(el, 'criteria')) {
-          $.data(el, 'criteria', new Authority(el, args));
+        if (!$.data(el, 'criteriaJS')) {
+          $.data(el, 'criteriaJS', new Authority(el, args));
         }
       });
     }
@@ -55,7 +55,7 @@ window.jQuery = $;
         });
 
         if (!$self.data('criteria')) {
-          return $.error('missing parameters or sth ma nigga.');
+          return $.error('i guess you\'re tryna initialize me with an empty ruleset ?');
         }
 
         $self.data('criteria').split('|').forEach((ruleset) => {
@@ -88,8 +88,8 @@ window.jQuery = $;
 
         args.rules = holder;
 
-        if (!$.data(el, 'criteria')) {
-          $.data(el, 'criteria', new Authority(el, args));
+        if (!$.data(el, 'criteriaJS')) {
+          $.data(el, 'criteriaJS', new Authority(el, args));
         }
 
         return el;
