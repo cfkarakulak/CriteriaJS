@@ -1,5 +1,5 @@
 /* Scripts */
-import './demo/main';
+import './example/main';
 
 /* Styles */
 import './styles/reset.less';
