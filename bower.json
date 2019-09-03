@@ -1,7 +1,7 @@
 {
   "name": "criteriajs",
   "description": "Password criteria authoritor",
-  "main": "Criteria/Criteria.js",
+  "main": "Criteria/scripts/Criteria.js",
   "authors": [
     "Cemre Fatih Karakulak"
   ],
