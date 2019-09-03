@@ -1,6 +1,6 @@
 {
   "name": "criteriajs",
-  "version": "1.0.4-rc.3",
+  "version": "1.0.5",
   "description": "Apply rulesets for your password fields",
   "main": "Criteria/scripts/Criteria.js",
   "scripts": {
@@ -29,12 +29,12 @@
     {
       "name": "Cemre Fatih Karakulak",
       "email": "cradexco@gmail.com",
-      "url": "https://github.com/cfkarakulak"      
+      "url": "https://github.com/cfkarakulak"
     },
     {
       "name": "Muhammed Bacalan",
       "email": "muhammedbacalan@gmail.com",
-      "url": "https://github.com/mbacalan"      
+      "url": "https://github.com/mbacalan"
     }
   ],
   "homepage": "https://github.com/cfkarakulak/CriteriaJS#readme",
