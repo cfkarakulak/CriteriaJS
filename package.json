@@ -2,7 +2,7 @@
   "name": "criteriajs",
   "version": "1.0.4-rc.3",
   "description": "Apply rulesets for your password fields",
-  "main": "Criteria/Criteria.js",
+  "main": "Criteria/scripts/Criteria.js",
   "scripts": {
     "dev": "webpack --mode=development",
     "watch": "webpack --watch --mode=development",
@@ -25,9 +25,21 @@
   "bugs": {
     "url": "https://github.com/cfkarakulak/CriteriaJS/issues"
   },
+  "contributors": [
+    {
+      "name": "Cemre Fatih Karakulak",
+      "email": "cradexco@gmail.com",
+      "url": "https://github.com/cfkarakulak"      
+    },
+    {
+      "name": "Muhammed Bacalan",
+      "email": "muhammedbacalan@gmail.com",
+      "url": "https://github.com/mbacalan"      
+    }
+  ],
   "homepage": "https://github.com/cfkarakulak/CriteriaJS#readme",
   "peerDependencies": {
-    "jquery": "^3.4.1"
+    "jquery": ">=1.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -50,6 +62,6 @@
     "braces": ">=2.3.1"
   },
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": ">=1.8.0"
   }
 }
