@@ -28,7 +28,7 @@ const criteria = $('input[data-criteria]').criteria({
   rules: {
     length: [6, 15],
     contains: {
-      alphanumerical: 1,
+      alphabetical: 1,
       numerical: 1,
       lowercase: 1,
       uppercase: 1,
@@ -53,8 +53,8 @@ and seperate each rule with a pipe (|).
 Example:
 
 ```html
-<input type="password" data-criteria="length:6-15|alphanumerical:1|mumerical:1|uppercase:2|lowercase:3">
-<input type="password" data-criteria="length:4-20|mumerical:3|uppercase:1|special:3">
+<input type="password" data-criteria="length:6-15|alphabetical:1|numerical:1|uppercase:2|lowercase:3">
+<input type="password" data-criteria="length:4-20|numerical:3|uppercase:1|special:3">
 ```
 
 ```javascript
@@ -98,7 +98,7 @@ npm run watch
 Rule | Type | Default | Description
 ------ | ---- | ------- | -----------
 length | array | [6, null] | Checks whether the value of the target element has a length between min and max. Use `[6, null]` if you wish to disable maximum check.
-alphanumerical | integer | null | Checks whether the value has at least n number of alphanumerical characters. `Latin Alphabet`
+alphabetical | integer | null | Checks whether the value has at least n number of alphabetical characters. `Latin Alphabet`
 numerical | integer | null | Checks whether the value has at least n number of numerical characters. `[0-9]`
 lowercase | integer | null | Checks whether the value has at least n number of lowercase characters. `[a-z]`
 uppercase | integer | null | Checks whether the value has at least n number of uppercase characters. `[A-Z]`

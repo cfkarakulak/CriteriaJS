@@ -91,13 +91,13 @@ export default class Authority {
     }
 
     /*-----------------------------------------------------------------------------------*/
-    /* #02.1 Content Check > Alphanumerical [value]
+    /* #02.1 Content Check > Alphabetical [value]
     /*-----------------------------------------------------------------------------------*/
 
-    if (Helpers.has(this.attributes.rules, 'alphanumerical')) {
-      this.attributes.rules.alphanumerical = Rules.isAlphanumerical(
+    if (Helpers.has(this.attributes.rules, 'alphabetical')) {
+      this.attributes.rules.alphabetical = Rules.isAlphabetical(
         this.attributes.value,
-        this.settings.rules.contains.alphanumerical,
+        this.settings.rules.contains.alphabetical,
       );
     }
 

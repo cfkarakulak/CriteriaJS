@@ -15,7 +15,7 @@
 
 import isAtMostAs from './Rules/isAtMostAs';
 import isAtLeastAs from './Rules/isAtLeastAs';
-import isAlphanumerical from './Rules/isAlphanumerical';
+import isAlphabetical from './Rules/isAlphabetical';
 import isNumerical from './Rules/isNumerical';
 import isLowerCase from './Rules/isLowerCase';
 import isUpperCase from './Rules/isUpperCase';
@@ -30,8 +30,8 @@ export default class Rules {
     return isAtLeastAs(length, min);
   }
 
-  static isAlphanumerical(value, occurrence) {
-    return isAlphanumerical(value, occurrence);
+  static isAlphabetical(value, occurrence) {
+    return isAlphabetical(value, occurrence);
   }
 
   static isNumerical(value, occurrence) {

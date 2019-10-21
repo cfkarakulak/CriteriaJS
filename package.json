@@ -1,6 +1,6 @@
 {
-  "name": "criteriajs",
-  "version": "1.0.5-rc.1",
+  "name": "@cfkarakulak/criteria",
+  "version": "1.0.5-rc.2",
   "description": "Apply rulesets for your password fields",
   "main": "Criteria/scripts/Criteria.js",
   "scripts": {
